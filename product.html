@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Icosahedron Lamp Kit · Foldlight</title>
+<meta name="description" content="A rotating origami lamp kit: the motorized base, 30 laser-scored film units for a Triangle-Edge Icosahedron shade, and a PDF + video folding guide.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Foldlight home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><polygon points="16,2 29,10 29,22 16,30 3,22 3,10" fill="#f4b860"/><path d="M16 2 16 30M3 10 29 22M29 10 3 22" stroke="#fff6e6" stroke-width="1.5"/></svg>
+      Foldlight
+    </a>
+    <nav class="links" aria-label="Main">
+      <a href="shop.html" class="keep">Shop</a>
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#faq">FAQ</a>
+      <a class="btn small" data-buy="Buy" data-reserve="Reserve" href="#reserve">Reserve</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="product">
+    <div class="wrap">
+      <!-- gallery -->
+      <div class="gallery">
+        <div class="main night" id="gallery-main">
+          <svg data-art="lamp" role="img" aria-label="The lamp lit, with its shade turning on the base"></svg>
+        </div>
+        <div class="thumbs" role="group" aria-label="Pictures">
+          <button type="button" class="night" data-view="lamp" aria-pressed="true" aria-label="The lamp lit"><svg data-art="lamp" aria-hidden="true"></svg></button>
+          <button type="button" class="night" data-view="shade" aria-pressed="false" aria-label="The shade close up"><svg data-art="shade" aria-hidden="true"></svg></button>
+          <button type="button" class="alt" data-view="base" aria-pressed="false" aria-label="The base and its speed buttons"><svg data-art="base" aria-hidden="true"></svg></button>
+          <button type="button" class="alt" data-view="kit" aria-pressed="false" aria-label="What's in the kit"><svg data-art="kit" aria-hidden="true"></svg></button>
+        </div>
+        <p class="fineprint">Illustrations. Photos of the finished lamp are coming.</p>
+      </div>
+
+      <!-- details -->
+      <div>
+        <p class="crumbs"><a href="shop.html">Shop</a> / Lamp kits</p>
+        <span class="tag live">Drop 01 · small batch</span>
+        <h1 style="font-size: clamp(2rem, 4.4vw, 2.9rem);">The Icosahedron Lamp Kit</h1>
+        <p class="muted">A turning lamp you finish yourself. Fold 30 laser-scored film units into a Triangle-Edge Icosahedron, set it on the base, and pick a speed.</p>
+
+        <div class="buybox" id="reserve">
+          <p class="price" data-price>Price announced at launch</p>
+          <p class="price-note" data-when-reserve>Drop 01 isn't on sale yet. Reserve a spot and we'll email you first when it opens.</p>
+          <p class="price-note" data-when-checkout hidden>Secure checkout. Local pickup at our LA fairs, or shipping within the US.</p>
+
+          <div data-when-checkout hidden>
+            <a class="btn" data-buy="Buy the kit" href="#">Buy the kit</a>
+          </div>
+
+          <form class="waitlist" data-when-reserve name="reserve" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="company">
+            <input type="hidden" name="form-name" value="reserve">
+            <input type="hidden" name="product" value="icosahedron-lamp-kit">
+            <p class="honeypot"><label>Leave this empty <input name="company" tabindex="-1" autocomplete="off"></label></p>
+            <label class="visually-hidden" for="email-reserve">Email</label>
+            <input id="email-reserve" type="email" name="email" placeholder="you@email.com" autocomplete="email" required>
+            <button class="btn" type="submit" style="margin-top:10px;">Reserve your kit</button>
+            <p class="fineprint">No payment now. One email when the drop opens.</p>
+            <p class="status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <h2 style="font-size:1.35rem;">What's in the box</h2>
+        <ul class="ticks">
+          <li><strong>The base</strong>, assembled: a round white 3D-printed base with 7 speed buttons and an on/off rocker</li>
+          <li>A <strong>UL-listed 12 V wall adapter</strong> and a <strong>12 V LED bulb</strong> (replaceable)</li>
+          <li><strong>30 film units</strong> with their fold lines laser-scored: 25 standard units and 5 collar units that seat the shade in the base</li>
+          <li>A <strong>QR code</strong> to the folding guide, as a PDF and a video</li>
+        </ul>
+        <p class="fineprint" style="margin-top:-4px;">The kit has the exact number of units. If one gets damaged, we'll send a replacement.</p>
+
+        <h2 style="font-size:1.35rem; margin-top:32px;">Details</h2>
+        <table class="specs">
+          <tr><th>Shade</th><td>Triangle-Edge Icosahedron, about 8 in (20 cm) across. Every face is three kite-shaped pieces</td></tr>
+          <tr><th>Assembly</th><td>Folded and locked by hand. No glue, clips or tape</td></tr>
+          <tr><th>Shade material</th><td>Frosted, translucent polyester (PET) film</td></tr>
+          <tr><th>Base</th><td>Ø200 × 60 mm (7.9 × 2.4 in), white</td></tr>
+          <tr><th>Rotation</th><td>The shade turns, the light stays still. 1, 2.5 or 5 turns a minute, either way, plus stop</td></tr>
+          <tr><th>Light</th><td>12 V LED bulb, E12 base. Switched with the rocker</td></tr>
+          <tr><th>Power</th><td>12 V wall adapter, included. Nothing in the lamp runs on mains power</td></tr>
+          <tr><th>Folding time</th><td>As long as you like. It's a project, not a chore</td></tr>
+        </table>
+
+        <h2 style="font-size:1.35rem; margin-top:32px;">Safety</h2>
+        <ul class="ticks">
+          <li>Use only the 12 V adapter that comes with the lamp, and only a 12 V LED bulb of the supplied type. Never an incandescent or halogen bulb: the shade is plastic film</li>
+          <li>Indoor use only. Keep it dry, and don't cover the shade or put fabric or paper on it</li>
+          <li>Keep the turning base clear of hair, cords and small fingers. Not a toy: contains small parts</li>
+        </ul>
+
+        <h2 style="font-size:1.35rem; margin-top:32px;" id="credit">Origami credit</h2>
+        <p class="credit">The shade is folded from the <strong>Triangle Edge Module, designed by Lewis Simon</strong>, in its half-square version by <strong>Bennett Arnstein</strong>, from <em>3-D Geometric Origami: Modular Polyhedra</em> by Rona Gurkewitz and Bennett Arnstein (1995). We're grateful to the origami designers whose work makes this lamp possible.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <p class="eyebrow">How it goes together</p>
+      <h2>An evening project, or several</h2>
+      <div class="steps">
+        <div class="step"><h3>Fold 30 units</h3><p>Each unit starts as a half-square film sheet with its creases already scored. The guide shows every fold.</p></div>
+        <div class="step"><h3>Build the ball</h3><p>Join the units edge by edge, starting from the collar ring at the bottom. The locks hold by friction and folding alone.</p></div>
+        <div class="step"><h3>Seat and switch on</h3><p>The collar slots into the pocket on the base. Flip the rocker, press a speed button, and turn the lights down.</p></div>
+      </div>
+      <div class="btn-row" style="margin-top:36px;">
+        <a class="btn" data-buy="Buy the kit" data-reserve="Reserve your kit" href="#reserve">Reserve your kit</a>
+        <a class="btn ghost" href="shop.html">Back to the shop</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span data-year>2026</span> Foldlight · Folded by you, built in Los Angeles</span>
+    <span class="cols">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a data-contact href="#"></a>
+    </span>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
