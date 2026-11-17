@@ -16,13 +16,13 @@ code (`assets/site.js`) until real photos exist.
 ## Live site
 
 Hosted on GitHub Pages from a separate **public** repo, so this private repo
-stays private: <https://jasenzhang1.github.io/foldlight-site/>
+stays private: <https://jasenzhang1.github.io/foldlite-site/>
 
 To publish changes, from the root of this repo:
 
 ```bash
 git subtree split --prefix website -b site-deploy
-git push https://github.com/jasenzhang1/foldlight-site.git site-deploy:main --force
+git push https://github.com/jasenzhang1/foldlite-site.git site-deploy:main --force
 git branch -D site-deploy
 ```
 
@@ -33,7 +33,7 @@ Pages updates about a minute after the push.
 | Setting | What it does | How to get it |
 |---|---|---|
 | `price` | Shows the price everywhere, e.g. `129` | Your decision (PRD target $100–150) |
-| `checkoutUrl` | "Reserve" buttons become "Buy" and go to Stripe checkout | Stripe dashboard > Payment Links > new link for the kit. Turn on address collection and quantity. Set *After payment* to redirect to `https://jasenzhang1.github.io/foldlight-site/thanks.html?order=1` |
+| `checkoutUrl` | "Reserve" buttons become "Buy" and go to Stripe checkout | Stripe dashboard > Payment Links > new link for the kit. Turn on address collection and quantity. Set *After payment* to redirect to `https://jasenzhang1.github.io/foldlite-site/thanks.html?order=1` |
 | `waitlistEndpoint` | Makes the sign-up and reserve forms work. **GitHub Pages can't receive forms**, so until this is set, the forms show "sign-up isn't open yet" | Free Formspree form (formspree.io), paste its URL |
 | `contactEmail` | Footer email and a fallback "email us to reserve" link | A business address, not a personal one |
 
